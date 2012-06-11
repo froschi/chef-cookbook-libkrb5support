@@ -5,11 +5,11 @@ when "lucid"
   include_recipe "libkeyutils"
 
   packages |= %w/
-    libkrb5support
+    libkrb5support0
   /
 when "precise"
   packages |= %w/
-    libkrb5support
+    libkrb5support0
   /
 end
 
