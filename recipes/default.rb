@@ -2,6 +2,8 @@ packages = Array.new
 
 case node[:lsb][:codename]
 when "lucid"
+  include_recipe "libkeyutils"
+
   packages |= %w/
     libkrb5support
   /
